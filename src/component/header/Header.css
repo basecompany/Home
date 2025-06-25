@@ -1,0 +1,55 @@
+.Header{
+    display: flex;
+    align-items: center;
+    /*background-color: #616161;*/
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    animation-duration: 2s;
+    transition: all 1s ease-in-out ;
+}
+.Header.visible {
+    background-color: rgba(9, 12, 32,20%);
+    backdrop-filter: blur(100px);
+    width: 100%;
+    transition: all 1s ease-in-out ;
+}
+
+.Header.hidden {
+    backdrop-filter: blur(0px);
+    background-color: rgba(9, 12, 32, 0%);
+
+    /*opacity: 0;*/
+    /*transform: scale(0.95);*/
+    /*pointer-events: none;*/
+}
+
+
+.Header:hover{
+}
+.Header-Logo-Container{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+.Header-Logo-Container>img{
+    width: 6vw;
+    margin-left: 5vw;
+}
+
+
+
+
+.Header-Link{
+    display: flex;
+}
+.Header-Link>div{
+    padding: 1vw;
+}
+.Header-Link>div>a{
+    color: white;
+    text-decoration: none;
+}

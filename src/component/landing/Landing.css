@@ -1,0 +1,72 @@
+.Landing {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+}
+.OBJECTS{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.OBJECTS.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.OBJECTS.hidden {
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+}
+
+
+.Landing-Text{
+    width: 30%;
+    height: 20%;
+    margin: auto;
+    background-color: rgba(9, 12, 32, 0.7);
+    padding: 2vw;
+    border-radius: 1vw;
+    backdrop-filter: blur(80px);
+    animation-duration: 5s;
+}
+.Landing-Text>div{
+    animation-duration: 1s;
+}
+.Landing-Text>div>h1{
+    color: white;
+}
+.Landing-Text>div>p{
+    color: grey;
+}
+.Landing-Text>div>a{
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 1vw;
+}
+.Landing-Text-Button{
+    padding-top: 2vh;
+}
+.Landing-Text-Button>a{
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+.lucide-github{
+    margin-right: 1vh;
+}
+.Landing-Text-Button>a:hover{
+    background-color: rgba(255, 255, 255, 0.55);
+    color: rgba(9, 12, 32);
+    transition: all 0.3s ease;
+}

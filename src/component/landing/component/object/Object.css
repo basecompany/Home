@@ -1,0 +1,69 @@
+
+@keyframes moveObj1 {
+    from {
+        transform: translate(0, 0) scale(1);
+        opacity: 0;
+    }
+    to {
+        transform: translate(30vw, 10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes moveObj2 {
+    from {
+        transform: translate(0, 0) scale(1);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-10vw, 20vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes moveObj3 {
+    from {
+        transform: translate(0, 0) scale(1);
+        opacity: 0;
+    }
+    to {
+        transform: translate(10vw, 50vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes floatAround {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    25%  { transform: translate(10px, -10px) rotate(5deg); }
+    50%  { transform: translate(-10px, 10px) rotate(-5deg); }
+    75%  { transform: translate(1px, -1px) rotate(0.5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+
+.OBJECTS_1 {
+}
+.OBJECTS_2 {
+}
+.OBJECTS_3 {
+}
+
+
+.OBJECT_FLOATING_ANIMATION {
+    animation: floatAround 30s ease-in-out 2s infinite alternate;
+}
+
+.OBJECT_BLUR {
+    filter: blur(10px);
+}
+
+
+.OBJECTS_1_WRAPPER{
+    animation: moveObj1 2s ease-in-out forwards;
+}
+.OBJECTS_2_WRAPPER{
+    animation: moveObj2 2s ease-in-out forwards;
+}
+.OBJECTS_3_WRAPPER{
+    animation: moveObj3 2s ease-in-out forwards;
+}

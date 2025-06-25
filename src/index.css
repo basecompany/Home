@@ -1,0 +1,24 @@
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/font/Roboto_Mono/RobotoMono-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow-x: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
