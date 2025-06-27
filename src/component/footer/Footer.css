@@ -1,5 +1,5 @@
 .footer{
-    height: 30vh;
+    height: fit-content;
 }
 .footer-legal{
     display: flex;
@@ -49,4 +49,11 @@
     font-size: 1.2vh;
     margin: 20px;
     display: block;
+}
+
+
+@media (max-width: 768px){
+    .footer{
+        display: none;
+    }
 }

@@ -53,3 +53,43 @@
     color: white;
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px){
+    .Header{
+        padding-top:3vw;
+    }
+    .Header-Link > div {
+        padding: 2vw;
+    }
+    .Header-Logo-Container > img {
+        width: 10vw;
+        margin-left: 5vw;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .Header-Link{
+        display: none;
+    }
+    .Header-Logo-Container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Header-Logo-Container>img{
+        width: 40vw;
+        padding: 50vw;
+        display: none;
+    }
+}

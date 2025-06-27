@@ -43,3 +43,19 @@
     border-radius: 10px;
     margin: 10px;
 }
+
+
+@media (max-width: 768px){
+    .my-projects{
+        display: block;
+        height: fit-content;
+    }
+    .my-project{
+        width: 100%;
+    }
+    .my-project>div{
+        width: 90%;
+        margin: auto;
+        margin-top: 2vh;
+    }
+}

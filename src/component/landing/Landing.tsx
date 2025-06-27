@@ -9,7 +9,7 @@ function Landing({ showObjects }: { showObjects: boolean }) {
                 <Object />
             </div>
 
-            <div className={"Landing-Text animate__fadeIn"}>
+            <div className={`Landing-Text animate__fadeIn ${showObjects ? "visible" : "hidden"}`}>
                 <div className={"Landing-Text-Title"}><h1>Hi, There</h1></div>
                 <div className={"Landing-Text-Text"}>
                     {/*<p>Specializing in Software Architecture, Testing Frameworks, and Complex Simulations...</p>*/}

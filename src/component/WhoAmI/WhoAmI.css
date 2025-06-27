@@ -54,3 +54,23 @@
 .WhoAmI-Text>div{
     width: 50%;
 }
+
+
+
+
+@media (max-width: 768px){
+    .WhoAmI{
+        display: block;
+    }
+    .WhoAmI>div{
+        width: 100%;
+        padding-top: 10vh;
+    }
+    .WhoAmI-Text>div{
+        width: 60%;
+        text-align: center;
+    }
+    .WhoAmI-Logo > img {
+        width: 100vw;
+    }
+}
