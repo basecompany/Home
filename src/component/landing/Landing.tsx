@@ -2,9 +2,11 @@ import "./Landing.css"
 import Object from "./component/object/Object.tsx";
 import {Github} from "lucide-react";
 
+
 function Landing({ showObjects }: { showObjects: boolean }) {
     return (
         <div className={"Landing"} id={"Landing"}>
+
             <div className={`OBJECTS ${showObjects ? "visible" : "hidden"}`}>
                 <Object />
             </div>
