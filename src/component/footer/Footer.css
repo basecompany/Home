@@ -51,6 +51,15 @@
     display: block;
 }
 
+@media (max-width: 1200px){
+    .footer-container>div>img{
+        display: none;
+    }
+    .footer-container>div{
+        padding-bottom: 5vh;
+
+    }
+}
 
 @media (max-width: 768px){
     .footer{
