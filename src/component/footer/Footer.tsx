@@ -8,7 +8,7 @@ function Footer(){
                 <div>
                     <img src={Logo}/>
                     <h1>About</h1>
-                    <p>This Plateform Is About Putting My Project To Real Life So People Can Use And Test Them. BETA May Contain Projects Related To Aviation, General Code, Finance, Music Or Any Other Field Of Interest </p>
+                    <p>This Plateform Is About Putting My Project To Real Life So People Can Use And Test Them. BASE May Contain Projects Related To Aviation, General Code, Finance, Music Or Any Other Field Of Interest </p>
                 </div>
                 <div>
                     <h1>Projects</h1>

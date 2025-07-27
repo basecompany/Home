@@ -26,7 +26,7 @@ function MyProjects() {
 
                 <div className="project-card">
                     <img
-                        src="/Home/src/assets/pecunia.png"
+                        src="https://media.discordapp.net/attachments/1359149188461494395/1399076844610912327/pecunia.png?ex=6887af59&is=68865dd9&hm=1d0c33cb6344fb06bc8921ef18feeac22620f5bbf972303daf6abf9fa318cad2&=&format=webp&quality=lossless&width=1527&height=859"
                         alt="Pecunia"
                     />
                     <div className="overlay">

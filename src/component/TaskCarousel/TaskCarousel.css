@@ -134,7 +134,23 @@
     100% { opacity: 1; transform: translateY(0); }
 }
 
-
+@media (max-width: 1200px) {
+    .partners-title{
+        font-size: 1.5vw;
+    }
+    .partner-logo{
+        width: 15vw;
+    }
+    .persona-text p{
+        font-size: 1.5vw;
+    }
+    .persona-banner{
+        display: block;
+    }
+    .banner {
+        height: fit-content;
+    }
+}
 
 @media (max-width: 768px){
     .partner-logo{

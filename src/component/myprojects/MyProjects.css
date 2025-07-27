@@ -106,7 +106,15 @@
 }
 
 
-
+@media (max-width: 1200px) {
+    .my-projects{
+        height: fit-content;
+        padding-bottom: 10vh;
+    }
+    .my-project > div{
+        width: 100vw;
+    }
+}
 @media (max-width: 768px){
     .my-project-title{
         font-size: 4vw;
