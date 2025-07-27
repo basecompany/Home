@@ -66,7 +66,7 @@ const TaskCarousel: React.FC = () => {
     useEffect(() => {
         const id = setInterval(() => {
             setIndex((prev) => (prev + 1) % slides.length);
-        }, 116000);
+        }, 6000);
         return () => clearInterval(id);
     }, []);
 
