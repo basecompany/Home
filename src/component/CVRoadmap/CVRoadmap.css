@@ -1,0 +1,151 @@
+.zigzag-title{
+    text-align: center;
+}
+.zigzag-title>h1{
+    color: white;
+
+}
+.zigzag-wrapper.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.zigzag-wrapper.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    pointer-events: none;
+}
+
+.zigzag-wrapper {
+    position: relative;
+    /*padding: 10vw;*/
+    max-width: 1000px;
+    margin: auto;
+    transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.zigzag-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #ccc;
+    transform: translateX(-50%);
+}
+
+.zigzag-item {
+    position: relative;
+    width: 50%;
+    padding: 1.5rem 2rem;
+    box-sizing: border-box;
+}
+
+.zigzag-item.left {
+    left: 0;
+    text-align: right;
+}
+
+.zigzag-item.right {
+    left: 50%;
+    text-align: left;
+}
+
+.zigzag-dot {
+    position: absolute;
+    top: 2rem;
+    width: 14px;
+    height: 14px;
+    background: #0077cc;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.zigzag-item.left .zigzag-dot {
+    right: -7px;
+}
+
+.zigzag-item.right .zigzag-dot {
+    left: -7px;
+}
+
+.zigzag-content {
+    background: #0b293a;
+    padding: 2vw;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #c8c8c8;
+}
+
+h4 {
+    margin: 0.2rem 0;
+    font-size: 0.7vw;
+    font-weight: normal;
+    color: #9f9f9f;
+}
+
+.zigzag-date {
+    display: block;
+    font-size: 0.7vw;
+    color: #e6e6e6;
+    margin: 0.5rem 0;
+}
+
+p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.zigzag-content {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.zigzag-content.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.zigzag-content.hidden {
+    pointer-events: none;
+}
+
+.CVRoadmap{
+    padding-bottom: 10vh;
+}
+
+
+.zigzag-item.education .zigzag-dot,
+.zigzag-item.education .zigzag-content {
+    background-color: #007030; /* Education – Blue */
+    color: white;
+}
+
+.zigzag-item.work .zigzag-dot,
+.zigzag-item.work .zigzag-content {
+    background-color: #006880; /* Work – Green */
+    color: white;
+}
+
+.zigzag-item.internship .zigzag-dot,
+.zigzag-item.internship .zigzag-content {
+    background-color: #a65209; /* Internship – Orange */
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .CVRoadmap{
+        display: none;
+    }
+}
+
+

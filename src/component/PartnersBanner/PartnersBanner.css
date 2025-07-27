@@ -1,0 +1,33 @@
+.partners-banner {
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 16px;
+    margin: 40px auto;
+}
+
+.partners-title {
+    font-size: 0.8vw;
+    margin-bottom: 32px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.partner-logo {
+    /*height: 40px;*/
+    /*max-width: 140px;*/
+    width: 10vw;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.partner-logo:hover {
+    opacity: 1;
+}

@@ -7,15 +7,10 @@ function Header({ visible }: { visible: boolean }){
         <div className={`Header animate__fadeInDown ${visible ? "visible" : "hidden"}`}>
             <div className="Header-Logo-Container"><img src={Logo}/></div>
             <div className="Header-Link">
-                {/*<div><a href="#">Pecunia</a></div>*/}
-                {/*<div><a href="#">x86</a></div>*/}
-                {/*<div><a href="#">Schola</a></div>*/}
-                {/*<div><a href="#">Portfolio</a></div>*/}
-
                 <div><a href="#Landing">Home</a></div>
-                <div><a href="#WhoAmI">About</a></div>
+                <div><a href="#task-carousel">Collaborations</a></div>
+                <div><a href="#CVRoadmap">Curriculum</a></div>
                 <div><a href="#my-projects">Projects</a></div>
-                <div><a href="#footer">Other</a></div>
             </div>
         </div>
     )

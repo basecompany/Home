@@ -1,25 +1,23 @@
 import './App.css'
 import Header from "./component/header/Header.tsx";
 import Landing from "./component/landing/Landing.tsx";
-import WhoAmI from "./component/WhoAmI/WhoAmI.tsx";
 import {useEffect, useState} from "react";
 import MyProjects from "./component/myprojects/MyProjects.tsx";
 import Footer from "./component/footer/Footer.tsx";
+import TaskCarousel from "./component/TaskCarousel/TaskCarousel.tsx";
+import CVRoadmap from "./component/CVRoadmap/CVRoadmap.tsx";
+import TechBanner from "./component/TechBanner/TechBanner.tsx";
 
 function App() {
     const [showObjects, setShowObjects] = useState(true);
-    const [showWhoAmI, setShowWhoAmI] = useState(false);
-    const [showMyProjects, setShowMyProjects] = useState(false);
+    // const [showWhoAmI, setShowWhoAmI] = useState(false);
     const [showHeader, setshowHeader] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
-
-            setshowHeader(scrollY > window.innerHeight * 0.5); // Hide after 60% scroll
+            setshowHeader(scrollY > window.innerHeight * 0.1); // Hide after 60% scroll
             setShowObjects(scrollY < window.innerHeight * 0.5); // Hide after 60% scroll
-            setShowWhoAmI(scrollY > window.innerHeight * 0.8);
-            setShowMyProjects(scrollY > window.innerHeight * 1.5);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -29,8 +27,12 @@ function App() {
     <div>
         <Header visible={showHeader}/>
         <Landing showObjects={showObjects} />
-        <WhoAmI visible={showWhoAmI}/>
-        <MyProjects visible={showMyProjects}/>
+        <TaskCarousel/>
+        <TechBanner/>
+        <CVRoadmap/>
+        <MyProjects/>
+
+
         <Footer/>
     </div>
   )
