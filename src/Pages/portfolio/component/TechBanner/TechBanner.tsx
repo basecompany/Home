@@ -1,8 +1,8 @@
 import "./TechBanner.css";
-import angular from "../../assets/technologie/angular.svg"
-import reactjs from "../../assets/technologie/reactjs.svg"
-import typescript from "../../assets/technologie/typescript.svg"
-import msfsSDK from "../../assets/technologie/Microsoft-Flight-Simulator-SDK.png"
+import angular from "../../../../assets/technologie/angular.svg"
+import reactjs from "../../../../assets/technologie/reactjs.svg"
+import typescript from "../../../../assets/technologie/typescript.svg"
+import msfsSDK from "../../../../assets/technologie/Microsoft-Flight-Simulator-SDK.png"
 
 const techLogos = [
     { name: "angular", src: angular},

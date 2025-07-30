@@ -1,5 +1,5 @@
 import "./CVRoadmap.css";
-import {useInView} from "../../hooks/useInView.ts";
+import {useInView} from "../../../../hooks/useInView.ts";
 
 type RoadmapStep = {
     title: string;

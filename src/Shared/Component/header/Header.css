@@ -43,9 +43,24 @@
 
 
 
-.Header-Link{
+.Header-Link {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    padding-right: 5vw;
 }
+
+.Nav-Links {
+    display: flex;
+    gap: 1vw;
+}
+
+.Header-Auth {
+    display: flex;
+    gap: 1vw;
+}
+
 .Header-Link>div{
     padding: 1vw;
 }
@@ -53,7 +68,30 @@
     color: white;
     text-decoration: none;
 }
+.Nav-Links>div{
+    padding: 1vw;
+}
+.Nav-Links>div>a{
+    color: white;
+    text-decoration: none;
+}
 
+
+.Header-Auth>a{
+    margin-left: 1vw;
+}
+.login{
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 1vw;
+}
+.login{
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.19);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 1vw;
+}
 
 
 

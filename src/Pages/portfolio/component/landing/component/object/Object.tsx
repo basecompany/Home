@@ -1,9 +1,9 @@
 import "./Object.css"
 
 
-import object1 from "../../../../assets/1.png"
-import object2 from "../../../../assets/2.png"
-import object3 from "../../../../assets/3.png"
+import object1 from "../../../../../../assets/1.png"
+import object2 from "../../../../../../assets/2.png"
+import object3 from "../../../../../../assets/3.png"
 
 function Object(){
     return(

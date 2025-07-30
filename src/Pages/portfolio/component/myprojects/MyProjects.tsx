@@ -1,5 +1,5 @@
 import './MyProjects.css'
-import {useInView} from "../../hooks/useInView.ts";
+import {useInView} from "../../../../hooks/useInView.ts";
 
 function MyProjects() {
     const [ref, isVisible] = useInView<HTMLDivElement>();

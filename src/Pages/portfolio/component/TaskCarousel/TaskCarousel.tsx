@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import vatsimClient from "../../assets/clients/vatsim-client.png"
-import inibuildsClient from "../../assets/clients/inibuilds-client.png"
-import justflightClient from "../../assets/clients/justflight-client.png"
+import vatsimClient from "../../../../assets/clients/vatsim-client.png"
+import inibuildsClient from "../../../../assets/clients/inibuilds-client.png"
+import justflightClient from "../../../../assets/clients/justflight-client.png"
 import "./TaskCarousel.css";
-import {useInView} from "../../hooks/useInView.ts";
+import {useInView} from "../../../../hooks/useInView.ts";
 
 interface Slide {
     title: string;

@@ -1,0 +1,150 @@
+.base-login-wrapper {
+    position: relative;
+    height: 100vh;
+    /*background-color: #0d0d0d;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.base-login-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 30% 30%, #25066a, #030927);
+    z-index: 0;
+}
+
+.base-login-card {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
+    padding: 48px;
+    width: 360px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 0 40px rgba(19, 84, 170, 0.08);
+}
+
+.base-login-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #cfcfcf;
+}
+
+.base-login-subtitle {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 32px;
+}
+
+.base-login-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.base-sso-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.base-sso-button:hover {
+    border-color: #937dc3;
+    color: #937dc3;
+}
+
+
+/*@keyframes pulseGradient {*/
+/*    0% {*/
+/*        background: radial-gradient(circle at 30% 30%, #25066a, #030927);*/
+/*    }*/
+/*    50% {*/
+/*        background: radial-gradient(circle at 55% 55%, #361a8d, #050a2f);*/
+/*    }*/
+/*    100% {*/
+/*        background: radial-gradient(circle at 30% 30%, #25066a, #030927);*/
+/*    }*/
+/*}*/
+
+/*.base-login-bg {*/
+/*    !*animation: pulseGradient 8s ease-in-out infinite;*!*/
+/*    !*transition: background 1s ease-in-out;*!*/
+/*}*/
+
+
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.base-login-card {
+    animation: fadeInCard 0.8s ease-out forwards;
+}
+
+
+
+
+
+
+
+
+
+
+.base-login-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    background: radial-gradient(circle at center, #25066a, #030927);
+}
+
+/* Sun Core – stays static */
+.base-login-bg::before {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(3, 11, 35, 0.33), #25066a);
+    box-shadow: 0 0 60px rgba(147, 125, 195, 0.4);
+    z-index: 1;
+}
+
+/* Orbiting Pulse Layer */
+.base-login-bg::after {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1px solid rgba(147, 125, 195, 0.2);
+    animation: rotateOrbit 60s linear infinite;
+    z-index: 0;
+}

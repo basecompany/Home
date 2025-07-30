@@ -1,9 +1,9 @@
-import "./Landing.css"
+import "./HomeSection.css"
 import Object from "./component/object/Object.tsx";
 import {Github} from "lucide-react";
 
 
-function Landing({ showObjects }: { showObjects: boolean }) {
+function HomeSection({ showObjects }: { showObjects: boolean }) {
     return (
         <div className={"Landing"} id={"Landing"}>
 
@@ -28,4 +28,4 @@ function Landing({ showObjects }: { showObjects: boolean }) {
 }
 
 
-export default Landing
+export default HomeSection
