@@ -4,8 +4,8 @@ import TaskCarousel from "./component/TaskCarousel/TaskCarousel.tsx";
 import TechBanner from "./component/TechBanner/TechBanner.tsx";
 import CVRoadmap from "./component/CVRoadmap/CVRoadmap.tsx";
 import MyProjects from "./component/myprojects/MyProjects.tsx";
-import Footer from "./component/footer/Footer.tsx";
 import {useEffect, useState} from "react";
+import Footer from "../../Shared/Component/footer/Footer.tsx";
 
 export default function Portfolio() {
 
@@ -32,7 +32,6 @@ export default function Portfolio() {
 
     return(
         <div>
-            {/*<Header visible={showHeader} links={headerLinks} />;*/}
 
             <Header
                 visible={showHeader}
@@ -52,8 +51,8 @@ export default function Portfolio() {
             <CVRoadmap/>
             <MyProjects/>
 
-
             <Footer/>
+
         </div>
     )
 }

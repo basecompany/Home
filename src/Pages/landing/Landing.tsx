@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import Header from "../../Shared/Component/Header/Header.tsx";
 import HomeSection, {type I_HomeSectionContent} from "../../Shared/Component/HomeSection/HomeSection.tsx";
 import Products from "./components/Products/Products.tsx";
+import Footer from "../../Shared/Component/footer/Footer.tsx";
 
 const Landing = ()=>{
     const [showObjects, setShowObjects] = useState(true);
@@ -43,6 +44,8 @@ const Landing = ()=>{
             />
 
             <Products/>
+
+            <Footer/>
         </div>
     )
 }
