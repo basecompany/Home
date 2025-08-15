@@ -1,10 +1,14 @@
-.banner{
+.task-carousel-container {
     height: 100vh;
+}
+.banner{
     transition: opacity 1.2s ease, transform 1.2s ease;
+    /* Always reserve space for the banner */
 }
 .banner.visible {
     opacity: 1;
     transform: translateY(0);
+    height: fit-content;
 }
 
 .banner.hidden {
@@ -15,7 +19,6 @@
 
 .partners-banner {
     text-align: center;
-    padding: 60px 20px;
     border-radius: 16px;
     margin: 40px auto;
 }
@@ -39,12 +42,12 @@
     /*height: 40px;*/
     /*max-width: 140px;*/
     width: 10vw;
-    opacity: 0.9;
+    /*opacity: 0.9;*/
     transition: opacity 0.3s ease;
 }
 
 .partner-logo:hover {
-    opacity: 1;
+    /*opacity: 1;*/
 }
 
 
@@ -139,7 +142,7 @@
         font-size: 1.5vw;
     }
     .partner-logo{
-        width: 15vw;
+        /*width: 15vw;*/
     }
     .persona-text p{
         font-size: 1.5vw;
@@ -154,7 +157,7 @@
 
 @media (max-width: 768px){
     .partner-logo{
-        width: 60vw;
+        /*width: 60vw;*/
     }
     .partners-title{
         margin-bottom: 10vh;

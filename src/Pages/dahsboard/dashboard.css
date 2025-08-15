@@ -1,0 +1,76 @@
+.dashboard{
+    width: 100vw;
+    height: 100vh;
+}
+
+.dashboard--dark {
+    background-color: #000023 !important;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dashboard--light {
+    background-color: #f7f7f7 !important;
+    color: #222;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header,
+.sidebar,
+.your-apps,
+.settings-content,
+.settings-tabs,
+.tab,
+.loading-spinner-container,
+.loading-spinner {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dashboard--light .header,
+.dashboard--light .sidebar,
+.dashboard--light .your-apps,
+.dashboard--light .settings-content,
+.dashboard--light .settings-tabs,
+.dashboard--light .tab,
+.dashboard--light .loading-spinner-container {
+    color: #222 !important;
+}
+.dashboard--light .loading-spinner {
+    border-top: 6px solid #3498db;
+    border: 6px solid #eee;
+}
+.dashboard--light .sidebar-link {
+    color: #000 !important;
+}
+
+.dashboard--dark .header,
+.dashboard--dark .sidebar,
+.dashboard--dark .your-apps,
+.dashboard--dark .settings-content,
+.dashboard--dark .settings-tabs,
+.dashboard--dark .tab,
+.dashboard--dark .loading-spinner-container {
+    background-color: #000023 !important;
+    color: #e0e0e0 !important;
+}
+.dashboard--dark .loading-spinner {
+    border-top: 6px solid #3498db;
+    border: 6px solid #222;
+}
+
+/* Banner and .app-card keep their own color styles */
+
+.content{
+    display: flex;
+    width: 100vw;
+}
+.main-content{
+    /*width: 90vw;*/
+}
+.main-content--sidebar {
+  width: 90vw;
+  transition: all 0.3s ease;
+}
+.main-content--full {
+  width: none;
+  transition: all 0.3s ease;
+}

@@ -1,10 +1,10 @@
 import './LoginPage.css';
-import { Github, Chrome } from 'lucide-react';
+import {Chrome } from 'lucide-react';
 
 const LoginPage = () => {
-    const handleSSOLogin = (provider: string) => {
-        console.log(`Initiate ${provider} SSO`);
-        // Replace with actual redirect logic
+    const handleSSOLogin = () => {
+        console.log(import.meta.env.VITE_API_URL)
+        window.location.href = `${import.meta.env.VITE_API_URL}/auth/google`;
     };
 
     return (
@@ -19,14 +19,7 @@ const LoginPage = () => {
                 <div className="base-login-buttons">
                     <button
                         className="base-sso-button"
-                        onClick={() => handleSSOLogin('GitHub')}
-                    >
-                        <Github size={18} />
-                        <span>Sign in with GitHub</span>
-                    </button>
-                    <button
-                        className="base-sso-button"
-                        onClick={() => handleSSOLogin('Google')}
+                        onClick={() => handleSSOLogin()}
                     >
                         <Chrome size={18} />
                         <span>Sign in with Google</span>

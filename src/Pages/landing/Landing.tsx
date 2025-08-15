@@ -1,13 +1,17 @@
 import {useEffect, useState} from "react";
-import Header from "../../Shared/Component/header/Header.tsx";
-import HomeSection from "../portfolio/component/landing/HomeSection.tsx";
+import Header from "../../Shared/Component/Header/Header.tsx";
+import HomeSection, {type I_HomeSectionContent} from "../../Shared/Component/HomeSection/HomeSection.tsx";
 import Products from "./components/Products/Products.tsx";
 
-export const Landing = ()=>{
+const Landing = ()=>{
     const [showObjects, setShowObjects] = useState(true);
     const [showHeader, setshowHeader] = useState(false);
 
-
+    const HomeSectionContent: I_HomeSectionContent = {
+        title: "Hi, There",
+        description: "Modular systems for people and businesses. We build scalable platforms, automate workflows, and design reliable, adaptive interfaces.",
+        githubLink: "https://github.com/basecompany"
+    }
 
 
     useEffect(() => {
@@ -33,9 +37,14 @@ export const Landing = ()=>{
                 showAuthButtons={true}
             />
 
-            <HomeSection showObjects={showObjects} />
+            <HomeSection
+                showObjects={showObjects}
+                content={HomeSectionContent}
+            />
 
             <Products/>
         </div>
     )
 }
+
+export default Landing;

@@ -1,5 +1,5 @@
-import Header from "../../Shared/Component/header/Header.tsx";
-import HomeSection from "./component/landing/HomeSection.tsx";
+import Header from "../../Shared/Component/Header/Header.tsx";
+import HomeSection, {type I_HomeSectionContent} from "../../Shared/Component/HomeSection/HomeSection.tsx";
 import TaskCarousel from "./component/TaskCarousel/TaskCarousel.tsx";
 import TechBanner from "./component/TechBanner/TechBanner.tsx";
 import CVRoadmap from "./component/CVRoadmap/CVRoadmap.tsx";
@@ -12,7 +12,11 @@ export default function Portfolio() {
     const [showObjects, setShowObjects] = useState(true);
     const [showHeader, setshowHeader] = useState(false);
 
-
+    const HomeSectionContent: I_HomeSectionContent = {
+        title: "Hi, There",
+        description: "I build scalable systems, enforce reliability through rigorous testing, and develop real-world simulations with clean architecture.",
+        githubLink: "https://github.com/IlyassBa"
+    }
 
     useEffect(() => {
         const handleScroll = () => {
@@ -39,7 +43,10 @@ export default function Portfolio() {
                     { label: "Projects", href: "#my-projects" },
                 ]}
             />
-            <HomeSection showObjects={showObjects} />
+            <HomeSection
+                showObjects={showObjects}
+                content={HomeSectionContent}
+            />
             <TaskCarousel/>
             <TechBanner/>
             <CVRoadmap/>

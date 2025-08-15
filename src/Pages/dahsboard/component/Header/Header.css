@@ -1,0 +1,74 @@
+.header{
+    border-bottom: 1px solid #474747;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-content: center;
+    color: white;
+}
+.header>div{
+    width: 50%;
+    display: flex;
+    align-content: center;
+}
+
+.sidebar_toggle {
+    width: 60px;
+    display: flex;
+    align-items: center;    /* vertical center */
+    gap: 0.25rem;           /* spacing between svg and text */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.sidebar_toggle:hover {
+    background-color: rgba(94, 94, 94, 0.4); /* Change background on hover */
+    border-radius: 100px;        /* Optional: add some rounding */
+    transition: all 0.3s ease-in-out;
+}
+.sidebar_toggle svg {
+    width: 60px;
+    display: block;         /* remove any inline gaps or descender space */
+}
+
+
+.right-sidebar{
+    display: flex;
+    justify-content: flex-end;  /* push children to the right */
+    align-items: center;        /* vertically center if you need */
+    gap: 0.5rem;                /* optional spacing between icons */
+    width: 100%;
+}
+.setting_toggle svg{
+    display: block;         /* remove any inline gaps or descender space */
+    width: 60px;
+}
+
+.setting_toggle{
+    width: 60px;
+    display: flex;
+    align-items: center;    /* vertical center */
+    gap: 0.25rem;           /* spacing between svg and text */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.setting_toggle:hover {
+    background-color: rgba(94, 94, 94, 0.4); /* Change background on hover */
+    border-radius: 100px;        /* Optional: add some rounding */
+    transition: all 0.3s ease-in-out;
+}
+
+
+.header_account svg{
+    display: block;         /* remove any inline gaps or descender space */
+    width: 60px;
+}
+
+.header_avatar{
+    width: 40px;
+    border-radius: 100%;
+    padding: 1vw;
+}
+
+.header_name{
+
+}

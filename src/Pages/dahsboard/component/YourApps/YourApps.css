@@ -1,0 +1,63 @@
+.your-apps {
+    width: 70vw;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.your-apps__title {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.your-apps__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 4rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app-card {
+    width: 150px;
+    height: 150px;
+    background: #161639;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    cursor: default;
+    transition: background 0.2s;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.app-card>div{
+    height: fit-content;
+}
+.app-card:hover {
+    background: #272767;
+}
+
+.app-card__icon {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.app-card__label {
+    display: block;
+    font-size: 0.9rem;
+    color: #d5d5d5;
+}
+
+.app-card--add {
+    cursor: pointer;
+    color: #555;
+}
+
+.app-card--add .app-card__icon {
+    font-size: 2rem;
+    line-height: 1;
+}

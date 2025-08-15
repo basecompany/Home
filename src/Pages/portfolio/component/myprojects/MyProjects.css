@@ -1,7 +1,8 @@
 .my-projects{
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     transition: opacity 1.2s ease, transform 1.2s ease;
+    padding-bottom: 5vw;
     /*margin: 10vw;*/
 }
 
@@ -47,89 +48,4 @@
 /*.my-project>div>img{*/
 /*    border-radius: 10px;*/
 /*    width: 100%;*/
-/*}*/
 
-
-
-.project-card {
-    position: relative;
-    width: fit-content;
-    cursor: pointer;
-    height: fit-content;
-}
-
-.project-card img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-card:hover .overlay {
-    opacity: 1;
-}
-
-.overlay h2 {
-    margin: 1.5vw;
-    font-size: 1vw;
-    font-weight: 500;
-    text-align: center;
-
-}
-
-.overlay a {
-    padding: 8px 16px;
-    font-weight: 400;
-    font-size: 0.7vw;
-    background-color: #105268;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-
-@media (max-width: 1200px) {
-    .my-projects{
-        height: fit-content;
-        padding-bottom: 10vh;
-    }
-    .my-project > div{
-        width: 100vw;
-    }
-}
-@media (max-width: 768px){
-    .my-project-title{
-        font-size: 4vw;
-    }
-    .my-projects{
-        display: block;
-        height: fit-content;
-        padding-bottom: 10vh;
-    }
-    .my-project{
-        width: 100%;
-    }
-    .my-project>div{
-        width: 90%;
-        margin: auto;
-        margin-top: 2vh;
-    }
-}
