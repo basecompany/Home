@@ -20,8 +20,8 @@ jobs:
 
       - name: Deploy via SCP
         run: |
-          scp -r ./dist/* user@server:/var/www/html/
-          ssh user@server "sudo systemctl reload nginx"
+          scp -r ./dist/* debian@145.239.196.77:/var/www/basecompany
+          ssh debian@145.239.196.77 "sudo systemctl reload nginx"
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
 

@@ -74,16 +74,16 @@ const ProjectCardModal: React.FC<ProjectCardModalProps> = ({ project }) => (
                 </div>
             )}
 
-            {/*{project.link && project.link !== '#' && (*/}
-            {/*    <a*/}
-            {/*        className="project-card-modal__primary-link"*/}
-            {/*        href={project.link}*/}
-            {/*        target="_blank"*/}
-            {/*        rel="noopener noreferrer"*/}
-            {/*    >*/}
-            {/*        {project.linkText}*/}
-            {/*    </a>*/}
-            {/*)}*/}
+            {project.link && project.link !== '#' && (
+                <a
+                    className="project-card-modal__primary-link"
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {project.linkText}
+                </a>
+            )}
 
             {project.images && project.images.length > 1 && (
                 <div className="project-card-modal__gallery">
