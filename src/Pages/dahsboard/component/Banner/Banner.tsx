@@ -1,9 +1,8 @@
 import "./Banner.css"
+import type {T_Profile} from "../../Dashboard.tsx";
 
 export interface BannerProps {
-    profile?: {
-        name?: string;
-    };
+    profile?:  T_Profile|null
 }
 
 export default function Banner({ profile }: BannerProps) {

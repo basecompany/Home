@@ -1,7 +1,7 @@
 import './App.css'
 import Portfolio from "./Pages/portfolio/Portfolio.tsx";
 import {Routes, Route} from "react-router-dom";
-import LoginPage from "./Pages/LoginPage/LoginPage.tsx";
+import LoginPage from "./Pages/login-page/LoginPage.tsx";
 import Landing from "./Pages/landing/Landing.tsx";
 import Dashboard from "./Pages/dahsboard/Dashboard.tsx";
 

@@ -14,6 +14,7 @@
     border-radius: 15px;
     backdrop-filter: blur(80px);
     background-color: rgba(10, 10, 20, 0.3);
+    transform: scale(0.9);
 }
 
 .Product-Section.reverse {

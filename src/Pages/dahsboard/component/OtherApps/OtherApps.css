@@ -1,20 +1,20 @@
-.your-apps {
+.other-apps {
     width: 70vw;
     margin: 0 auto;
     padding: 1rem;
 
 }
 
-.your-apps__title {
+.other-apps__title {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
     color: white;
 }
 
-.your-apps__grid {
+.other-apps__grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 12rem;
+    gap: 4rem;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -80,14 +80,13 @@
 
 .app-card-body>a{
     border-radius: 5px;
-    background-color: #010175;
+    background-color: #131c49;
     text-decoration: none;
     padding: 1vh;
     color: white;
     font-size: 0.8vw;
     font-weight: 400;
     margin-right: 0.5vw;
-    cursor: pointer;
 }
 .app-card-body>p{
     margin-bottom: 25px;

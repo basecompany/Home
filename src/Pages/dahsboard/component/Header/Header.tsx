@@ -3,14 +3,11 @@ import {
     PanelLeftDashed,
     Settings, User, Sun, Moon
 } from "lucide-react";
+import type {T_Profile} from "../../Dashboard.tsx";
 
 export interface HeaderProps {
     onSettingsClick(): void;
-    profile?: {
-        name?: string;
-        picture?: string;
-        email?: string;
-    };
+    profile: T_Profile|null;
     onSidebarToggle(): void;
     theme: "dark" | "light";
     onThemeToggle(): void;

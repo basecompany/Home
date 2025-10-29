@@ -2,10 +2,9 @@ import './LoginPage.css';
 import {Chrome } from 'lucide-react';
 
 const LoginPage = () => {
-    const handleSSOLogin = () => {
-        console.log(import.meta.env.VITE_API_URL)
-        window.location.href = `${import.meta.env.VITE_API_URL}/auth/google`;
-    };
+
+    const handleSSOLogin = () => window.location.href = `${import.meta.env.VITE_API_URL}/auth/google`;
+
 
     return (
         <div className="base-login-wrapper">

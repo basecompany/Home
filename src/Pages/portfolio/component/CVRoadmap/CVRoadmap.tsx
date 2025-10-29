@@ -11,21 +11,21 @@ type RoadmapStep = {
 
 const roadmap: RoadmapStep[] = [
 
-    // {
-    //     title: "Just Flight",
-    //     subtitle: "Architect – Modular Logic",
-    //     date: "2023 – Present",
-    //     description: "Protected abstractions for avionics state, extensible SDK overlays, IP-segmented systems.",
-    //     category: "work",
-    // },
+    {
+        title: "Just Flight",
+        subtitle: "Flight Simulator Instrumentation",
+        date: "2025 – Present",
+        description: "Developement of the CGR-30C gauge ",
+        category: "work",
+    },
 
-    // {
-    //     title: "IT & Methods Division – Ministry of Health",
-    //     subtitle: "Internship",
-    //     date: "July 2021",
-    //     description: "Authentication with auth app using AngularJS and ExpressJS",
-    //     category: "internship",
-    // },
+    {
+        title: "IT & Methods Division – Ministry of Health",
+        subtitle: "Internship",
+        date: "July 2025",
+        description: "Authentication with auth app using AngularJS and .NET",
+        category: "internship",
+    },
     {
         title: "Pecunia",
         subtitle: "Personal Finance Web App",
@@ -62,10 +62,9 @@ const roadmap: RoadmapStep[] = [
         description: "École Marocaine des Sciences d'Ingénieur. Systems architecture, development workflows, modular design.",
         category: "education",
     },
-
     {
         title: "MagX Web App",
-        subtitle: "CRM Platform – Fullstack Developer",
+        subtitle: "Maghreb Vacc – Fullstack Developer",
         date: "Apr 2022 – Oct 2024",
         description: "Event scheduling, ATC dashboard, student registry, ATIS/METAR tools, VFR charting.",
         category: "work",
@@ -73,7 +72,7 @@ const roadmap: RoadmapStep[] = [
     {
         title: "IT & Methods Division – Ministry of Health",
         subtitle: "Internship",
-        date: "July 2021",
+        date: "July 2022",
         description: "Authentication with React Native",
         category: "internship",
     },
@@ -84,7 +83,6 @@ const roadmap: RoadmapStep[] = [
         description: "Computer setup and lab networking preparation for training center.",
         category: "internship",
     },
-
     {
         title: "Bachelor - Networking and Proprietary systems",
         subtitle: "Bachelor Degree",
